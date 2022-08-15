@@ -1,5 +1,6 @@
 import React from "react";
 import { io } from "socket.io-client";
+import {SteeringWheel} from "./SteeringWheel"
 
 export default function ControlPanel(){
     const [socket,setSocket] = React.useState()
@@ -23,6 +24,7 @@ export default function ControlPanel(){
         <div>
             <button onClick={handleForward}>Forward</button>
             <button onClick={handleStop}>Stop</button>
+            <SteeringWheel/>
         </div>
     )
 }
