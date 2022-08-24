@@ -6,6 +6,10 @@
     "client",
     "server"
   ],
+  "engines": {
+    "node": "14.17.6",
+    "yarn": "1.x"
+  },
   "scripts":{
     "build": "yarn workspace client run build",
     "start": "yarn workspace server run start"
