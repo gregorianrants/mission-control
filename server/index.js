@@ -13,6 +13,8 @@ const __dirname = url.fileURLToPath(new URL('.', import.meta.url));
 const staticPath = path.join(__dirname, "../client/build")
 console.log(staticPath)
 
+const PORT = process.env.PORT || '8080'
+
 
 app.use(express.static(staticPath));
 
@@ -33,6 +35,6 @@ io.on('ping',(socket)=>{
 
 })
 
-server.listen(3000, () => {
-    console.log('listening on *:3000');
+server.listen(PORT, () => {
+    console.log(`listening on *:${PORT}`);
 });
