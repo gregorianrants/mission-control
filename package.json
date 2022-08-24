@@ -1,0 +1,13 @@
+{
+  "name": "mission-control",
+  "version": "1.0.0",
+  "private":true,
+  "workspaces":[
+    "backend",
+    "frontend-for-backend"
+  ],
+  "main": "index.js",
+  "repository": "https://github.com/gregorianrants/mission-control.git",
+  "author": "gregor murray <gregorian_rants@hotmail.com>",
+  "license": "MIT"
+}
