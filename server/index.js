@@ -10,14 +10,14 @@ const io = new Server(server);
 import * as url from 'url';
 const __dirname = url.fileURLToPath(new URL('.', import.meta.url));
 
-const staticPath = path.join(__dirname, "../frontend-for-backend/build")
+const staticPath = path.join(__dirname, "../client/build")
 console.log(staticPath)
 
 
 app.use(express.static(staticPath));
 
 app.get("/*", function (req, res) {
-    const thePath = path.join(__dirname, "../frontend-for-backend/build", "index.html")
+    const thePath = path.join(__dirname, "../client/build", "index.html")
     console.log(thePath)
     res.sendFile(thePath);
 });

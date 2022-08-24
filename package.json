@@ -3,9 +3,13 @@
   "version": "1.0.0",
   "private":true,
   "workspaces":[
-    "backend",
-    "frontend-for-backend"
+    "client",
+    "server"
   ],
+  "scripts":{
+    "build": "yarn workspace client run build",
+    "start": "yarn workspace server run start"
+  },
   "main": "index.js",
   "repository": "https://github.com/gregorianrants/mission-control.git",
   "author": "gregor murray <gregorian_rants@hotmail.com>",
